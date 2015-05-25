@@ -1,0 +1,20 @@
+<div class="list-html">
+	<div class="list-body">
+		<a href="../hub">&lt;&lt; Back to the hub</a>
+		<h1>Messy Opening list</h1>
+		<p>Hint: ctrl+f</p>
+		<br>
+		<div class="series" ng-repeat='(series, titles) in videos'>
+			{{series}}
+			<ul>
+				<div ng-repeat='(title, video) in titles'>
+	 				<a href="/#/?video={{video}}">
+	 					<div class="title">
+	 						- {{title}}
+	 					</div>
+	  				</a>
+	  			</div>
+	  		</ul>
+	  	</div>
+	</div>
+</div>
